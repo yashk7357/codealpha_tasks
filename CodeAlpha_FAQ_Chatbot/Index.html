@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HelpBot | Smart FAQ Assistant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <div>
+                    <h1>HelpBot</h1>
+                    <span>Smart FAQ Assistant</span>
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    id="themeBtn"
+                    class="header-btn"
+                    title="Toggle theme">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <button
+                    id="clearBtn"
+                    class="header-btn"
+                    title="Clear chat">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="online-status">
+
+                <span></span>
+
+                Online
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="chat-container">
+
+
+            <!-- WELCOME -->
+
+            <section class="welcome">
+
+                <div class="welcome-icon">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                </div>
+
+                <h2>How can I help you?</h2>
+
+                <p>
+                    Ask a question about our services, features,
+                    account or general information.
+                </p>
+
+            </section>
+
+
+            <!-- QUICK QUESTIONS -->
+
+            <div class="quick-questions">
+
+                <button class="quick-btn">
+                    What is this service?
+                </button>
+
+                <button class="quick-btn">
+                    How does it work?
+                </button>
+
+                <button class="quick-btn">
+                    What features are available?
+                </button>
+
+                <button class="quick-btn">
+                    How can I contact support?
+                </button>
+
+            </div>
+
+
+            <!-- CHAT -->
+
+            <div
+                class="chat-messages"
+                id="chatMessages">
+
+
+                <!-- DEFAULT BOT MESSAGE -->
+
+                <div class="message bot-message">
+
+                    <div class="avatar">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+
+                    <div class="message-content">
+
+                        <span class="message-name">
+                            HelpBot
+                        </span>
+
+                        <div class="bubble">
+
+                            Hello! 👋 I'm HelpBot.
+                            Ask me a question and I'll try to help.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TYPING INDICATOR -->
+
+            <div
+                class="typing"
+                id="typingIndicator">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <small>
+                    HelpBot is typing...
+                </small>
+
+            </div>
+
+
+            <!-- INPUT -->
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your question here..."
+                    autocomplete="off">
+
+
+                <button
+                    id="sendBtn"
+                    title="Send message">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- HINT -->
+
+            <p class="hint">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Try asking about features, pricing, account or support.
+
+            </p>
+
+
+        </main>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <strong>HelpBot</strong>
+
+            <span>
+                Smart FAQ Chatbot · CodeAlpha Internship Task 2
+            </span>
+
+            <small>
+                © 2026 HelpBot
+            </small>
+
+        </footer>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
