@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PolyLingo | AI Language Translation Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+
+            <div class="brand-text">
+
+                <h1>PolyLingo</h1>
+
+                <span>
+                    AI Language Translation Studio
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    Translation Service Online
+                </span>
+
+            </div>
+
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                title="Toggle Theme">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+
+        <!-- HERO -->
+
+        <section class="hero-section">
+
+            <div class="hero-badge">
+
+                <i class="fa-solid fa-sparkles"></i>
+
+                AI-POWERED TRANSLATION
+
+            </div>
+
+
+            <h2>
+
+                Translate Without
+                <span>Language Barriers.</span>
+
+            </h2>
+
+
+            <p>
+
+                Transform your text into another language quickly and
+                effortlessly with PolyLingo's intelligent translation service.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= TRANSLATOR ================= -->
+
+        <section class="translator-card">
+
+
+            <!-- Language Selection -->
+
+            <div class="language-bar">
+
+
+                <div class="language-box">
+
+                    <label for="sourceLanguage">
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        SOURCE LANGUAGE
+
+                    </label>
+
+
+                    <select id="sourceLanguage">
+
+                        <option value="auto">
+                            Detect Language
+                        </option>
+
+                        <option value="en">English</option>
+                        <option value="mr">Marathi</option>
+                        <option value="hi">Hindi</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="bn">Bengali</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        <option value="kn">Kannada</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="pa">Punjabi</option>
+
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="es">Spanish</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Swap -->
+
+                <button
+                    class="swap-btn"
+                    id="swapLanguages"
+                    title="Swap Languages">
+
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                </button>
+
+
+
+                <!-- Target -->
+
+                <div class="language-box">
+
+                    <label for="targetLanguage">
+
+                        <i class="fa-solid fa-location-arrow"></i>
+
+                        TARGET LANGUAGE
+
+                    </label>
+
+
+                    <select id="targetLanguage">
+
+                        <option value="en">English</option>
+                        <option value="mr">Marathi</option>
+                        <option value="hi">Hindi</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="bn">Bengali</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        <option value="kn">Kannada</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="pa">Punjabi</option>
+
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="es">Spanish</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= WORKSPACE ================= -->
+
+            <div class="translation-area">
+
+
+                <!-- INPUT -->
+
+                <div class="text-panel">
+
+
+                    <div class="panel-header">
+
+                        <div class="panel-title">
+
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Your Text
+                                </strong>
+
+                                <small>
+                                    Enter text to translate
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="small-btn"
+                            id="clearText">
+
+                            <i class="fa-solid fa-eraser"></i>
+
+                            Clear
+
+                        </button>
+
+                    </div>
+
+
+
+                    <textarea
+                        id="inputText"
+                        maxlength="5000"
+                        placeholder="Write or paste your text here..."></textarea>
+
+
+
+                    <div class="panel-footer">
+
+                        <span id="characterCount">
+                            0 / 5000 characters
+                        </span>
+
+
+                        <button
+                            class="small-btn"
+                            id="pasteText">
+
+                            <i class="fa-regular fa-clipboard"></i>
+
+                            Paste
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- OUTPUT -->
+
+                <div class="text-panel output-panel">
+
+
+                    <div class="panel-header">
+
+                        <div class="panel-title">
+
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Translation
+                                </strong>
+
+                                <small>
+                                    Your translated result
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="small-btn"
+                            id="copyTranslation">
+
+                            <i class="fa-regular fa-copy"></i>
+
+                            Copy
+
+                        </button>
+
+                    </div>
+
+
+
+                    <div
+                        class="translation-result"
+                        id="translationResult">
+
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+
+                                <i class="fa-solid fa-language"></i>
+
+                            </div>
+
+
+                            <h3>
+                                Ready to translate
+                            </h3>
+
+
+                            <p>
+
+                                Your translated text will appear here.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="panel-footer">
+
+                        <span id="translationStatus">
+
+                            Ready to translate
+
+                        </span>
+
+
+                        <button
+                            class="small-btn"
+                            id="speakTranslation">
+
+                            <i class="fa-solid fa-volume-high"></i>
+
+                            Listen
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ACTION ================= -->
+
+            <div class="translate-action">
+
+
+                <button
+                    class="translate-btn"
+                    id="translateBtn">
+
+
+                    <span class="btn-content">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        Translate Text
+
+                    </span>
+
+
+                    <span
+                        class="loading-content"
+                        id="loadingContent">
+
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+
+                        Translating...
+
+                    </span>
+
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ERROR -->
+
+            <div
+                class="error-message"
+                id="errorMessage">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <span id="errorText">
+                    Something went wrong.
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features-section">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Fast & Reliable
+                    </h3>
+
+                    <p>
+                        Get translations within seconds.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Multi-Language
+                    </h3>
+
+                    <p>
+                        Supports multiple global languages.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Simple & Secure
+                    </h3>
+
+                    <p>
+                        Clean interface for easy translation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= HISTORY ================= -->
+
+        <section class="history-section">
+
+
+            <div class="section-heading">
+
+
+                <div>
+
+                    <span class="section-label">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                        RECENT TRANSLATIONS
+
+                    </span>
+
+
+                    <h2>
+                        Translation History
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="clear-history-btn"
+                    id="clearHistory">
+
+                    <i class="fa-solid fa-trash-can"></i>
+
+                    Clear History
+
+                </button>
+
+            </div>
+
+
+
+            <div
+                class="history-list"
+                id="historyList">
+
+
+                <div class="history-empty">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    <p>
+                        Your recent translations will appear here.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+
+                <i class="fa-solid fa-earth-americas"></i>
+
+            </div>
+
+
+            <strong>
+                PolyLingo
+            </strong>
+
+        </div>
+
+
+        <p>
+            AI Language Translation Studio
+        </p>
+
+
+        <span>
+            © 2026 PolyLingo · CodeAlpha Internship Task 1
+        </span>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
